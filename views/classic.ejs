@@ -1,0 +1,45 @@
+<div class="app-brand-text">
+    <h1>Bingo</h1>
+</div>
+
+<div class="confirm-wrapper">
+    <div class="container small" id="clear-confirm">
+        <span>Weet je zeker dat je alle kaarten wil verwijderen?</span>
+        <div class="options">
+            <div class="bubble btn" id="confirmClear">
+                <span href="#">Ja</span>
+            </div>
+            <div class="bubble btn" id="cancelClear">
+                <span href="#">Nee</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container small">
+    <div class="app-brand-container">
+        <i class="bx bxs-color" id="app-brand"></i>
+    </div>
+    <div class="actions">
+        <div class="bubble action">
+            <p class="italic">Nieuw kaartje nodig?</p>
+            <a id="generate">Klik hier</a>
+        </div>
+    </div>
+
+    <div class="bubble" id="bingo-cards">
+        
+    </div>
+
+    <div class="bubble btn btn-red" id="clear">
+        <span class="link">Verwijder alle kaarten</a>
+    </div>
+</div>
+
+<script src="/js/classic.js"></script>
+
+<script>
+    <% if (cards) cards.map(card => { %>
+        addCard(<%= card %>);
+    <% }) %>
+</script>
