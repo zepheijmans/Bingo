@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Change repository language
+*.js linguist-detectable=false
+*.scss linguist-detectable=false
